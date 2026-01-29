@@ -234,7 +234,7 @@ export default function Reservation() {
                     name="departure" 
                     value={formData.departure} 
                     onChange={handleInputChange}
-                    placeholder="Ex: 75000 Paris"
+                    placeholder="Ex: Bafoussam, Cameroun"
                     title="Lieu de départ du transport"
                     required
                   />
@@ -247,7 +247,7 @@ export default function Reservation() {
                     name="destination" 
                     value={formData.destination} 
                     onChange={handleInputChange}
-                    placeholder="Ex: 69000 Lyon"
+                    placeholder="Ex: Douala, Cameroun"
                     title="Lieu de destination du transport"
                     required
                   />
@@ -386,7 +386,7 @@ export default function Reservation() {
                       name="phone" 
                       value={formData.phone} 
                       onChange={handleInputChange}
-                      placeholder="+33 6 12 34 56 78"
+                      placeholder="+237 6 98 58 94 40"
                       title="Votre numéro de téléphone"
                       required
                     />

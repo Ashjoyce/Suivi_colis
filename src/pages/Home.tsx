@@ -33,7 +33,7 @@ export default function Home() {
             <div className="service-card card">
               <div className="service-icon">🚚</div>
               <h3>Transport Longue Distance</h3>
-              <p>Desservez toute la France et l'Europe</p>
+              <p>Desservez le Cameroun</p>
             </div>
             <div className="service-card card">
               <div className="service-icon">📍</div>

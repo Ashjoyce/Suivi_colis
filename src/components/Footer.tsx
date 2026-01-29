@@ -35,8 +35,8 @@ export default function Footer() {
         <div className="footer-section">
           <h4>Contact</h4>
           <p>Email: contact@moonlogistics.com</p>
-          <p>Tél: +33 (0)1 23 45 67 89</p>
-          <p>Adresse: 123 Rue de la Logistique, 75000 Paris</p>
+          <p>Tél: +237 6 98 58 94 40</p>
+          <p>Adresse: Douala, Cameroun</p>
         </div>
       </div>
 

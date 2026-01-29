@@ -18,7 +18,7 @@ export default function About() {
               <p>
                 Révolutionner le secteur du transport routier en offrant des solutions 
                 logistiques innovantes, numériques et accessibles à tous. Nous visons à 
-                devenir le leader incontournable de la logistique en France et en Europe.
+                devenir le leader incontournable de la logistique au Cameroun.
               </p>
             </div>
 
@@ -100,25 +100,25 @@ export default function About() {
           <div className="team-grid">
             <div className="team-member card">
               <div className="member-avatar">👨‍💼</div>
-              <h3>Jean Dupont</h3>
+              <h3>Pierre Nzete</h3>
               <p className="role">Président Directeur Général</p>
               <p>20 ans d'expérience dans la logistique</p>
             </div>
             <div className="team-member card">
               <div className="member-avatar">👩‍💼</div>
-              <h3>Marie Bernard</h3>
+              <h3>Marie Atangana</h3>
               <p className="role">Directrice Opérations</p>
               <p>Spécialiste en gestion de flotte</p>
             </div>
             <div className="team-member card">
               <div className="member-avatar">👨‍💻</div>
-              <h3>Pierre Martin</h3>
+              <h3>Paul Kenfack</h3>
               <p className="role">Directeur Technique</p>
               <p>Expert en solutions digitales</p>
             </div>
             <div className="team-member card">
               <div className="member-avatar">👩‍💻</div>
-              <h3>Sophie Lefevre</h3>
+              <h3>Sophie Njikam</h3>
               <p className="role">Responsable Client</p>
               <p>Satisfaction client garantie</p>
             </div>

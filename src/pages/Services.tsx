@@ -18,7 +18,7 @@ export default function Services() {
             <div className="service-icon-large">🚛</div>
             <h3>Transport Longue Distance</h3>
             <p>
-              Desservez toute la France et l'Europe avec notre flotte de camions modernes.
+              Desservez le Cameroun avec notre flotte de camions modernes.
               Nous garantissons une livraison sécurisée et à temps pour vos marchandises.
             </p>
             <ul className="service-features">

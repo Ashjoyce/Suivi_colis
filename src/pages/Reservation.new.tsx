@@ -234,7 +234,7 @@ export default function Reservation() {
                     name="departure" 
                     value={formData.departure} 
                     onChange={handleInputChange}
-                    placeholder="Ex: 75000 Paris"
+                    placeholder="Ex: Bafoussam, Cameroun"
                     required
                   />
                 </div>
@@ -246,7 +246,7 @@ export default function Reservation() {
                     name="destination" 
                     value={formData.destination} 
                     onChange={handleInputChange}
-                    placeholder="Ex: 69000 Lyon"
+                    placeholder="Ex: Douala, Cameroun"
                     required
                   />
                 </div>
