@@ -1,0 +1,96 @@
+{
+  "info": {
+    "name": "Suivi Colis API",
+    "version": "1.0.0",
+    "description": "Collection Postman pour tester l'API Suivi Colis"
+  },
+  "item": [
+    {
+      "name": "Authentification",
+      "item": [
+        {
+          "name": "Register",
+          "request": {
+            "method": "POST",
+            "url": "{{base_url}}/auth/register",
+            "body": {
+              "mode": "raw",
+              "raw": "{\"firstName\":\"John\",\"lastName\":\"Doe\",\"email\":\"john@example.com\",\"password\":\"Password123\",\"phone\":\"+33612345678\",\"address\":\"123 rue de Paris, 75000 Paris\",\"company\":\"Entreprise\"}"
+            }
+          }
+        },
+        {
+          "name": "Login",
+          "request": {
+            "method": "POST",
+            "url": "{{base_url}}/auth/login",
+            "body": {
+              "mode": "raw",
+              "raw": "{\"email\":\"john@example.com\",\"password\":\"Password123\"}"
+            }
+          }
+        },
+        {
+          "name": "Get Profile",
+          "request": {
+            "method": "GET",
+            "url": "{{base_url}}/auth/me",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Réservations",
+      "item": [
+        {
+          "name": "Create Reservation",
+          "request": {
+            "method": "POST",
+            "url": "{{base_url}}/reservations",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"merchandise\":{\"type\":\"Colis\",\"weight\":5,\"volume\":0.5},\"pickupLocation\":{\"address\":\"123 rue A\",\"city\":\"Paris\",\"lat\":48.8566,\"lng\":2.3522},\"deliveryLocation\":{\"address\":\"456 rue B\",\"city\":\"Lyon\",\"lat\":45.7640,\"lng\":4.8357},\"truck\":\"Fourgon\",\"pickupDate\":\"2024-02-15\",\"deliveryDate\":\"2024-02-17\",\"estimatedCost\":150}"
+            }
+          }
+        },
+        {
+          "name": "Get All Reservations",
+          "request": {
+            "method": "GET",
+            "url": "{{base_url}}/reservations",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Suivi Public",
+      "item": [
+        {
+          "name": "Search Tracking",
+          "request": {
+            "method": "GET",
+            "url": "{{base_url}}/tracking/search/MOON260101001"
+          }
+        }
+      ]
+    }
+  ]
+}

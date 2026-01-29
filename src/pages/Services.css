@@ -1,0 +1,407 @@
+.services-hero {
+  background: linear-gradient(135deg, var(--secondary-color) 0%, #001a3d 100%);
+  color: var(--text-light);
+  padding: 100px 20px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.services-hero::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(26, 200, 237, 0.1) 0%, transparent 70%);
+  animation: float 6s ease-in-out infinite;
+}
+
+.services-hero::after {
+  content: '';
+  position: absolute;
+  bottom: -50%;
+  left: -50%;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(255, 107, 53, 0.1) 0%, transparent 70%);
+  animation: float 8s ease-in-out infinite reverse;
+}
+
+.services-hero h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 1;
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+
+.services-hero p {
+  font-size: clamp(1rem, 2vw, 1.3rem);
+  position: relative;
+  z-index: 1;
+  opacity: 0.95;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(30px); }
+}
+
+.main-services {
+  background: linear-gradient(180deg, #f8f9fa 0%, #ffffff 100%);
+}
+
+.service-detail {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+  margin-bottom: 80px;
+  padding: 50px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 78, 137, 0.1);
+  transition: var(--transition);
+  border: 1px solid rgba(26, 200, 237, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.service-detail::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(26, 200, 237, 0.1) 0%, transparent 70%);
+}
+
+.service-detail:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 78, 137, 0.15);
+}
+
+.service-detail.alt {
+  grid-template-columns: 1fr 1fr;
+}
+
+.service-detail.alt .service-icon-large {
+  order: 2;
+}
+
+.service-icon-large {
+  font-size: clamp(3rem, 6vw, 5rem);
+  text-align: center;
+  animation: float 3s ease-in-out infinite;
+  position: relative;
+  z-index: 1;
+  color: var(--primary-color);
+  filter: drop-shadow(0 10px 20px rgba(255, 107, 53, 0.2));
+}
+
+.service-detail h3 {
+  color: var(--secondary-color);
+  font-size: clamp(1.4rem, 3vw, 1.8rem);
+  margin-bottom: 20px;
+  font-weight: 800;
+  position: relative;
+  z-index: 1;
+}
+
+.service-detail h3::before {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+  margin-bottom: 16px;
+  border-radius: 2px;
+}
+
+.service-detail p {
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  font-size: clamp(0.95rem, 1.5vw, 1.05rem);
+  position: relative;
+  z-index: 1;
+}
+
+.service-features {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  position: relative;
+  z-index: 1;
+}
+
+.service-features li {
+  color: #555;
+  font-size: 1rem;
+  padding-left: 30px;
+  position: relative;
+  transition: var(--transition);
+}
+
+.service-features li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--primary-color);
+  font-weight: 800;
+  font-size: 1.2rem;
+}
+
+.service-features li:hover {
+  color: var(--primary-color);
+  padding-left: 36px;
+}
+
+.pricing-section {
+  background: linear-gradient(180deg, #f8f9fa 0%, #ffffff 100%);
+  position: relative;
+  padding: 60px 20px;
+  overflow: hidden;
+}
+
+.pricing-section::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -10%;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(255, 107, 53, 0.1) 0%, transparent 70%);
+}
+
+.pricing-intro {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 1.1rem;
+  color: #666;
+  position: relative;
+  z-index: 1;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pricing-intro h2 {
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  color: var(--secondary-color);
+  margin-bottom: 16px;
+  font-weight: 800;
+}
+
+.pricing-table {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 78, 137, 0.1);
+  border: 1px solid rgba(26, 200, 237, 0.1);
+  position: relative;
+  z-index: 1;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.pricing-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-bottom: 1px solid rgba(26, 200, 237, 0.1);
+}
+
+.pricing-row:last-child {
+  border-bottom: none;
+}
+
+.pricing-row.header {
+  background: linear-gradient(135deg, var(--secondary-color) 0%, #001a3d 100%);
+  color: var(--text-light);
+  font-weight: 700;
+}
+
+.pricing-cell {
+  padding: 20px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.95rem;
+  transition: var(--transition);
+}
+
+.pricing-row:not(.header) .pricing-cell:hover {
+  background: rgba(26, 200, 237, 0.05);
+}
+
+.pricing-footer {
+  text-align: center;
+  margin-top: 40px;
+  color: #666;
+  position: relative;
+  z-index: 1;
+}
+
+.advantages-section {
+  background: linear-gradient(180deg, #ffffff 0%, #f8f9fa 100%);
+  padding-bottom: 80px;
+}
+
+.advantages-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.advantage {
+  text-align: center;
+  padding: 40px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0, 78, 137, 0.08);
+  transition: var(--transition);
+  border: 1px solid rgba(26, 200, 237, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.advantage::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+}
+
+.advantage:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 30px rgba(0, 78, 137, 0.15);
+}
+
+.advantage-icon {
+  font-size: clamp(2.5rem, 4vw, 3rem);
+  margin-bottom: 16px;
+  animation: float 3s ease-in-out infinite;
+}
+
+.advantage h3 {
+  color: var(--secondary-color);
+  margin-bottom: 12px;
+  font-size: clamp(1.1rem, 2.5vw, 1.2rem);
+  font-weight: 700;
+}
+
+.advantage p {
+  color: #555;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 768px) {
+  .services-hero {
+    padding: 60px 20px;
+  }
+
+  .services-hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .service-detail {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 30px;
+    margin-bottom: 50px;
+  }
+
+  .service-detail.alt .service-icon-large {
+    order: 1;
+  }
+
+  .pricing-section {
+    padding: 40px 20px;
+  }
+
+  .pricing-intro {
+    margin-bottom: 30px;
+  }
+
+  .pricing-row {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .pricing-row.header {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .pricing-cell {
+    justify-content: flex-start;
+    padding: 16px;
+  }
+
+  .pricing-row.header .pricing-cell {
+    justify-content: flex-start;
+  }
+
+  .advantages-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .advantage {
+    padding: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .services-hero {
+    padding: 40px 16px;
+  }
+
+  .services-hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .service-detail {
+    gap: 20px;
+    padding: 24px;
+    margin-bottom: 40px;
+  }
+
+  .pricing-section {
+    padding: 30px 16px;
+  }
+
+  .pricing-row {
+    grid-template-columns: 1fr;
+  }
+
+  .pricing-row.header {
+    grid-template-columns: 1fr;
+  }
+
+  .pricing-cell {
+    justify-content: center;
+    text-align: center;
+    padding: 12px;
+  }
+
+  .advantages-grid {
+    gap: 16px;
+  }
+
+  .advantage {
+    padding: 24px;
+  }
+
+  .advantage-icon {
+    font-size: 2.5rem;
+  }
+}
